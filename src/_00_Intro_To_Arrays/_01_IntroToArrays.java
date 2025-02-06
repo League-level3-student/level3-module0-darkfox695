@@ -1,13 +1,17 @@
 package _00_Intro_To_Arrays;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class _01_IntroToArrays {
     public static void main(String[] args) {
         // 1. declare and Initialize an array 5 Strings
-
+        ArrayList<String> strings = new ArrayList<String>(5);
+        for(int i = 0; i > 4; i++) {
+            strings.add(i + "");
+        }
         // 2. print the third element in the array
-
+        System.out.println(strings.get(2));
         // 3. set the third element to a different value
 
         // 4. print the third element again
